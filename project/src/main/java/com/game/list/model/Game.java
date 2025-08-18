@@ -23,6 +23,7 @@ public class Game {
     private double score;
     private String urlImage;
     private String shortDescription;
+    @Column(length = 1000)
     private String longDescription;
 
     @Override
