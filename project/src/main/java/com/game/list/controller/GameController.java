@@ -1,5 +1,6 @@
 package com.game.list.controller;
 
+import com.game.list.dto.GameDTO;
 import com.game.list.model.Game;
 import com.game.list.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,15 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/games")
+@RequestMapping(value = "/games")
 public class GameController {
 
     @Autowired
     private GameService service;
 
     @GetMapping
-    public List<Game> getAll(){
-        return service.getAll();
+    public List<GameDTO> findAll() {
+        List<GameDTO> result = service.findAll();
+        return result;
     }
 
 
