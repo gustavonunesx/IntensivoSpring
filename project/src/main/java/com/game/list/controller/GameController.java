@@ -1,7 +1,6 @@
 package com.game.list.controller;
 
 import com.game.list.dto.GameDTO;
-import com.game.list.model.Game;
 import com.game.list.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

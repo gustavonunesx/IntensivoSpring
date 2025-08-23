@@ -3,11 +3,8 @@ package com.game.list.model;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.net.Inet4Address;
 import java.util.Objects;
 
 
@@ -23,7 +20,7 @@ public class Belonging {
     private Integer position;
 
     public Belonging(Game game, GameList list, Integer position){
-        this.id.setGame(game);
+        id.setGame(game);
         id.setList(list);
         this.position = position;
     }
